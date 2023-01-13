@@ -19,7 +19,7 @@ const AccountSettings = () => {
     if (isPasswordProvider) {
       setModal({
         ...modal,
-        title: 'Re-Login',
+        title: 'Đăng nhập lại',
         content: <ReAuth {...{ action }} />,
       });
     } else {
@@ -29,19 +29,19 @@ const AccountSettings = () => {
           case 'changeEmail':
             setModal({
               ...modal,
-              title: 'Update Email',
+              title: 'Cập nhật Email',
               content: <ChangeEmail />,
             });
             break;
           case 'deleteAccount':
             setModal({
               ...modal,
-              title: 'Delete Account',
+              title: 'Xóa tài khoản',
               content: <DeleteAccount />,
             });
             break;
           default:
-            throw new Error('No matching action');
+            throw new Error('Không có hành động phù hợp');
         }
       } catch (error) {
         setAlert({
@@ -59,21 +59,21 @@ const AccountSettings = () => {
     <>
       <DialogContent dividers>
         <DialogContentText>
-          For security reason, you need to provide your credentials to do any of
-          these actions:
+        Vì lý do bảo mật, bạn cần cung cấp thông tin đăng nhập của mình để thực hiện bất kỳ
+          những hành động này:
         </DialogContentText>
       </DialogContent>
       <DialogActions sx={{ flexDirection: 'column', gap: 2, my: 2 }}>
         {isPasswordProvider && (
           <Button onClick={() => handleAction('changePassword')}>
-            Change Password
+            Đổi mật khẩu
           </Button>
         )}
         <Button onClick={() => handleAction('changeEmail')}>
-          Change Email
+        Thay đổi Email
         </Button>
         <Button onClick={() => handleAction('deleteAccount')}>
-          Delete Account
+          Xóa tài khoản
         </Button>
       </DialogActions>
     </>

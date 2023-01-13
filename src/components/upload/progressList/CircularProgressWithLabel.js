@@ -1,5 +1,7 @@
 import { Box, CircularProgress, Typography } from '@mui/material';
 import React from 'react';
+import './App.css';
+
 
 const CircularProgressWithLabel = ({ value }) => {
   return (

@@ -32,7 +32,7 @@ const PasswordField = ({
         endAdornment: (
           <InputAdornment position="end">
             <IconButton
-              aria-label="Toggle Password visibility"
+              aria-label="Chuyển đổi chế độ hiển thị mật khẩu"
               onClick={handleClick}
               onMouseDown={handleMouseDown}
             >

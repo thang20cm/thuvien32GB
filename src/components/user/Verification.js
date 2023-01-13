@@ -17,8 +17,8 @@ const Verification = () => {
       await sendEmailVerification(currentUser);
       setAlert({
         isAlert: true,
-        severity: 'info',
-        message: 'verification link has been sent to your email inbox',
+        severity: 'Thông tin',
+        message: 'Liên kết xác minh đã được gửi đến hộp thư đến email của bạn',
         timeout: 8000,
         location: 'main',
       });
@@ -52,14 +52,14 @@ const Verification = () => {
             }
             sx={{ mb: 3 }}
           >
-            Your email has not been verified yet!
+            Email của bạn chưa được xác minh!
             <Button
               size="small"
               onClick={verify}
               disabled={isClicked}
               sx={{ lineHeight: 'initial' }}
             >
-              verify Now
+              Xác minh ngay
             </Button>
           </Alert>
         </Collapse>

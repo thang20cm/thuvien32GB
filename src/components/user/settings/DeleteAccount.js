@@ -21,8 +21,8 @@ const DeleteAccount = () => {
       setModal({ ...modal, isOpen: false });
       setAlert({
         isAlert: true,
-        severity: 'success',
-        message: 'Your account has been deleted',
+        severity: 'Thành công',
+        message: 'Tài khoản của bạn đã bị xóa',
         timeout: 8000,
         location: 'main',
       });
@@ -43,13 +43,13 @@ const DeleteAccount = () => {
     <form onSubmit={handleSubmit}>
       <DialogContent dividers>
         <DialogContentText>
-          Are you sure you want to delete your account? This action will delete
-          all of your files and records
+        Bạn có chắc rằng bạn muốn xóa tài khoản của bạn? Hành động này sẽ xóa
+          tất cả các tệp và hồ sơ của bạn
         </DialogContentText>
       </DialogContent>
       <DialogActions>
         <Button variant="contained" endIcon={<Send />} type="submit">
-          Confirm
+        Xác nhận
         </Button>
       </DialogActions>
     </form>

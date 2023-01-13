@@ -1,6 +1,6 @@
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-
+import './App.css';
 import { Avatar, Tooltip, Typography } from "@mui/material";
 import moment from "moment";
 import Options from "./Options";

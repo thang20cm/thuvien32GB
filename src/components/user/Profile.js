@@ -71,8 +71,8 @@ const Profile = () => {
 
       setAlert({
         isAlert: true,
-        severity: 'success',
-        message: 'Your profile has been updated',
+        severity: 'Thành công',
+        message: 'Hồ sơ của bạn đã được cập nhật 🥳',
         timeout: 3000,
         location: 'modal',
       });
@@ -92,9 +92,9 @@ const Profile = () => {
 
   useEffect(() => {
     if (openCrop) {
-      setModal({ ...modal, title: 'Crop Profile Photo' });
+      setModal({ ...modal, title: 'Cắt ảnh hồ sơ' });
     } else {
-      setModal({ ...modal, title: 'Update Profile' });
+      setModal({ ...modal, title: 'Cập nhật hồ sơ' });
     }
   }, [openCrop]);
 
@@ -102,7 +102,7 @@ const Profile = () => {
     <form onSubmit={handleSubmit}>
       <DialogContent dividers>
         <DialogContentText>
-          You can update your profile by updating these fields:
+        Bạn có thể cập nhật hồ sơ của mình bằng cách cập nhật các thông tin ở dưới:
         </DialogContentText>
         <TextField
           autoFocus

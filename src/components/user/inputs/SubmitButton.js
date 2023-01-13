@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 const SubmitButton = () => {
   return (
     <Button variant="contained" endIcon={<Send />} type="submit">
-      Submit
+      Xác nhận
     </Button>
   );
 };

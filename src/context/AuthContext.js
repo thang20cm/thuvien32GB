@@ -24,7 +24,7 @@ const AuthContext = ({ children }) => {
   const [modal, setModal] = useState({ isOpen: false, title: '', content: '' });
   const [alert, setAlert] = useState({
     isAlert: false,
-    severity: 'info',
+    severity: 'Thông tin',
     message: '',
     timeout: null,
     location: '',
@@ -52,7 +52,7 @@ const AuthContext = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
-      console.log('user status changed: ', user);
+      console.log('Trạng thái người dùng đã thay đổi: ', user);
     });
     return unsubscribe;
   }, []);

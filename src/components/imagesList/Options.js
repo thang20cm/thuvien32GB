@@ -9,6 +9,8 @@ import { Delete, Download, MoreVert } from "@mui/icons-material";
 import deleteDocument from "../../firebase/deleteDocument";
 import deleteFile from "../../firebase/deleteFile";
 import { useAuth } from "../../context/AuthContext";
+import './App.css';
+
 
 export default function Options({ imageId, uid, imageURL }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -114,14 +116,14 @@ export default function Options({ imageId, uid, imageURL }) {
           <ListItemIcon>
             <Download />
           </ListItemIcon>
-          Download
+          Tải xuống
         </MenuItem>
         {currentUser?.uid === uid && (
           <MenuItem onClick={handleDelete}>
             <ListItemIcon>
               <Delete />
             </ListItemIcon>
-            Delete
+           Xóa
           </MenuItem>
         )}
       </Menu>

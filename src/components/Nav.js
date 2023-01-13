@@ -29,7 +29,7 @@ export default function Nav() {
   const { currentUser, setModal, logout, setAlert } = useAuth();
 
   const openLogin = () => {
-    setModal({ isOpen: true, title: 'Login', content: <Login /> });
+    setModal({ isOpen: true, title: 'Đăng nhập', content: <Login /> });
   };
 
   const handleLogout = async () => {
@@ -38,7 +38,7 @@ export default function Nav() {
     } catch (error) {
       setAlert({
         isAlert: true,
-        severity: 'error',
+        severity: 'Lỗi',
         message: error.message,
         timeout: 8000,
         location: 'main',
@@ -50,11 +50,11 @@ export default function Nav() {
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         {!currentUser ? (
-          <Button startIcon={<Lock />} onClick={openLogin}>
-            Login
+          <Button style={{color:"burlywood"}} startIcon={<Lock />} onClick={openLogin}>
+            Đăng nhập
           </Button>
         ) : (
-          <Tooltip title="Account settings">
+          <Tooltip title="Cài đặt tài khoản">
             <IconButton onClick={handleClick} size="small" sx={{ ml: 2 }}>
               <Avatar
                 sx={{ width: 32, height: 32 }}
@@ -105,19 +105,19 @@ export default function Nav() {
           onClick={() =>
             setModal({
               isOpen: true,
-              title: 'Update Profile',
+              title: 'Cập nhật hồ sơ',
               content: <Profile />,
             })
           }
         >
-          <Avatar src={currentUser?.photoURL} /> Profile
+          <Avatar src={currentUser?.photoURL} /> Hồ sơ
         </MenuItem>
         <Divider />
         <MenuItem
           onClick={() =>
             setModal({
               isOpen: true,
-              title: 'Account Settings',
+              title: 'Cài đặt tài khoản',
               content: <AccountSettings />,
             })
           }
@@ -125,13 +125,13 @@ export default function Nav() {
           <ListItemIcon>
             <Settings fontSize="small" />
           </ListItemIcon>
-          Settings
+          Cài đặt
         </MenuItem>
         <MenuItem onClick={handleLogout}>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
-          Logout
+          Đăng xuất
         </MenuItem>
       </Menu>
     </React.Fragment>

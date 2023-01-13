@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8d37859.css",
-    "main.js": "/static/js/main.5d5c0fcb.js",
-    "static/media/lg.svg?22t19m": "/static/media/lg.adb7aeef16adb8599e2d.svg",
-    "static/media/lg.woff?22t19m": "/static/media/lg.0add59587d07387b771f.woff",
-    "static/media/lg.ttf?22t19m": "/static/media/lg.a53dcc5ea47fe7d1d9fc.ttf",
-    "index.html": "/index.html",
-    "main.b8d37859.css.map": "/static/css/main.b8d37859.css.map",
-    "main.5d5c0fcb.js.map": "/static/js/main.5d5c0fcb.js.map"
+    "main.css": "/iP7-32GB-Gold/static/css/main.753e9e2e.css",
+    "main.js": "/iP7-32GB-Gold/static/js/main.97b799d5.js",
+    "static/media/lg.svg?22t19m": "/iP7-32GB-Gold/static/media/lg.adb7aeef16adb8599e2d.svg",
+    "static/media/lg.woff?22t19m": "/iP7-32GB-Gold/static/media/lg.0add59587d07387b771f.woff",
+    "static/media/lg.ttf?22t19m": "/iP7-32GB-Gold/static/media/lg.a53dcc5ea47fe7d1d9fc.ttf",
+    "index.html": "/iP7-32GB-Gold/index.html",
+    "main.753e9e2e.css.map": "/iP7-32GB-Gold/static/css/main.753e9e2e.css.map",
+    "main.97b799d5.js.map": "/iP7-32GB-Gold/static/js/main.97b799d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8d37859.css",
-    "static/js/main.5d5c0fcb.js"
+    "static/css/main.753e9e2e.css",
+    "static/js/main.97b799d5.js"
   ]
 }

@@ -26,26 +26,26 @@ const ReAuth = ({ action }) => {
         case 'changePassword':
           setModal({
             ...modal,
-            title: 'Update Password',
+            title: 'Cập nhật mật khẩu',
             content: <ChangePassword />,
           });
           break;
         case 'changeEmail':
           setModal({
             ...modal,
-            title: 'Update Email',
+            title: 'Cập nhật Email',
             content: <ChangeEmail />,
           });
           break;
         case 'deleteAccount':
           setModal({
             ...modal,
-            title: 'Delete Account',
+            title: 'Xóa tài khoản',
             content: <DeleteAccount />,
           });
           break;
         default:
-          throw new Error('No matching action');
+          throw new Error('Không hợp lệ');
       }
     } catch (error) {
       setAlert({
@@ -64,7 +64,7 @@ const ReAuth = ({ action }) => {
     <form onSubmit={handleSubmit}>
       <DialogContent dividers>
         <DialogContentText>
-          Please Enter your current Password:
+        Vui lòng nhập Mật khẩu hiện tại của bạn:
         </DialogContentText>
         <PasswordField {...{ passwordRef }} />
       </DialogContent>

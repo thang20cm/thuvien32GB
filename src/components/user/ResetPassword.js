@@ -16,8 +16,8 @@ const ResetPassword = () => {
       setModal({ ...modal, isOpen: false });
       setAlert({
         isAlert: true,
-        severity: 'success',
-        message: 'reset link has been sent to your email inbox',
+        severity: 'Thành công!',
+        message: 'Liên kết đặt lài mật khẩu đã được gửi đến hộp thư đến email của bạn',
         timeout: 8000,
         location: 'main',
       });
@@ -36,7 +36,7 @@ const ResetPassword = () => {
   return (
     <form onSubmit={handleSubmit}>
       <DialogContent dividers>
-        <DialogContentText>Please enter your email address:</DialogContentText>
+        <DialogContentText>Nhập địa chỉ email của bạn:</DialogContentText>
         <EmailField {...{ emailRef }} />
       </DialogContent>
       <DialogActions>

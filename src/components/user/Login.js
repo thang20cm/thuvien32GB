@@ -38,7 +38,7 @@ const Login = () => {
       const confirmPassword = confirmPasswordRef.current.value;
       try {
         if (password !== confirmPassword) {
-          throw new Error("Passwords don't match");
+          throw new Error("Mật khẩu không khớp,nhập từ từ thôi =))");
         }
         await signUp(email, password);
         setModal({ ...modal, isOpen: false });
@@ -88,9 +88,9 @@ const Login = () => {
 
   useEffect(() => {
     if (isRegister) {
-      setModal({ ...modal, title: 'Register' });
+      setModal({ ...modal, title: 'Đăng ký' });
     } else {
-      setModal({ ...modal, title: 'Login' });
+      setModal({ ...modal, title: 'Đăng nhập' });
     }
   }, [isRegister]);
   return (
@@ -98,7 +98,7 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <DialogContent dividers>
           <DialogContentText>
-            Please enter your email and your password here:
+            Nhập tài khoản và mật khẩu vào đây:
           </DialogContentText>
           <EmailField {...{ emailRef }} />
           <PasswordField {...{ passwordRef, autoFocus: false }} />
@@ -107,7 +107,7 @@ const Login = () => {
               {...{
                 passwordRef: confirmPasswordRef,
                 id: 'confirmPassword',
-                label: 'Confirm Password',
+                label: 'Nhập lại mật khẩu',
                 autoFocus: false,
               }}
             />
@@ -119,22 +119,22 @@ const Login = () => {
             onClick={() =>
               setModal({
                 ...modal,
-                title: 'Reset Password',
+                title: 'Đặt lại mật khẩu',
                 content: <ResetPassword />,
               })
             }
           >
-            Forgot Password?
+            Quên mật khẩu?
           </Button>
           <SubmitButton />
         </DialogActions>
       </form>
       <DialogActions sx={{ justifyContent: 'left', p: '5px 24px' }}>
         {isRegister
-          ? 'Do you have an account? Sign in now'
-          : "Don't you have an account? Create one now"}
+          ? 'Bạn đã có tài khoản? Đăng nhập ngay'
+          : "Bạn chưa có tài khoản? Tạo 1 cái nào"}
         <Button onClick={() => setIsRegister(!isRegister)}>
-          {isRegister ? 'Login' : 'Register'}
+          {isRegister ? 'Đăng nhập' : 'Đăng ký'}
         </Button>
       </DialogActions>
       <DialogActions sx={{ justifyContent: 'center', py: '24px' }}>
@@ -143,7 +143,7 @@ const Login = () => {
           startIcon={<Google />}
           onClick={handleGoogleLogin}
         >
-          Login with Google
+          Đăng nhập với Gu gồ
         </Button>
       </DialogActions>
     </>

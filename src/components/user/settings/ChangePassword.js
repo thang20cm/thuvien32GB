@@ -15,14 +15,14 @@ const ChangePassword = () => {
     setLoading(true);
     try {
       if (passwordRef.current.value !== confirmPasswordRef.current.value) {
-        throw new Error('Passwords do not match');
+        throw new Error('Mật khẩu không phù hợp');
       }
       await updatePassword(currentUser, passwordRef.current.value);
       setModal({ ...modal, isOpen: false });
       setAlert({
         isAlert: true,
-        severity: 'success',
-        message: 'Your password has been updated',
+        severity: 'Thành công',
+        message: 'Mật khẩu của bạn đã cập nhật thành công',
         timeout: 8000,
         location: 'main',
       });
@@ -42,7 +42,7 @@ const ChangePassword = () => {
   return (
     <form onSubmit={handleSubmit}>
       <DialogContent dividers>
-        <DialogContentText>Please Enter your new Password:</DialogContentText>
+        <DialogContentText>Vui lòng nhập mật khẩu mới của bạn:</DialogContentText>
         <PasswordField {...{ passwordRef }} />
         <PasswordField
           {...{

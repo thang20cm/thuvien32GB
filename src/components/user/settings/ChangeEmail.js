@@ -17,8 +17,8 @@ const ChangeEmail = () => {
       setModal({ ...modal, isOpen: false });
       setAlert({
         isAlert: true,
-        severity: 'success',
-        message: 'Your email has been updated',
+        severity: 'Thành công',
+        message: 'Email của bạn update thành công',
         timeout: 8000,
         location: 'main',
       });
@@ -38,7 +38,7 @@ const ChangeEmail = () => {
   return (
     <form onSubmit={handleSubmit}>
       <DialogContent dividers>
-        <DialogContentText>Please Enter your new email:</DialogContentText>
+        <DialogContentText>Vui lòng nhập email mới của bạn:</DialogContentText>
         <EmailField {...{ emailRef, defaultValue: currentUser?.email }} />
       </DialogContent>
       <DialogActions>

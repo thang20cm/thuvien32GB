@@ -10,7 +10,7 @@ const Form = ({ setFiles }) => {
 
   const handleClick = () => {
     if (!currentUser) {
-      return setModal({ isOpen: true, title: 'Login', content: <Login /> });
+      return setModal({ isOpen: true, title: 'Đăng Nhập', content: <Login /> });
     }
 
     fileRef.current.click();
