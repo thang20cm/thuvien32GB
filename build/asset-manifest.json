@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/iP7-32GB-Gold/static/css/main.753e9e2e.css",
-    "main.js": "/iP7-32GB-Gold/static/js/main.97b799d5.js",
-    "static/media/lg.svg?22t19m": "/iP7-32GB-Gold/static/media/lg.adb7aeef16adb8599e2d.svg",
-    "static/media/lg.woff?22t19m": "/iP7-32GB-Gold/static/media/lg.0add59587d07387b771f.woff",
-    "static/media/lg.ttf?22t19m": "/iP7-32GB-Gold/static/media/lg.a53dcc5ea47fe7d1d9fc.ttf",
-    "index.html": "/iP7-32GB-Gold/index.html",
-    "main.753e9e2e.css.map": "/iP7-32GB-Gold/static/css/main.753e9e2e.css.map",
-    "main.97b799d5.js.map": "/iP7-32GB-Gold/static/js/main.97b799d5.js.map"
+    "main.css": "/thuvienip7-gold/static/css/main.38065fbc.css",
+    "main.js": "/thuvienip7-gold/static/js/main.e8df9db3.js",
+    "static/media/lg.svg?22t19m": "/thuvienip7-gold/static/media/lg.adb7aeef16adb8599e2d.svg",
+    "static/media/lg.woff?22t19m": "/thuvienip7-gold/static/media/lg.0add59587d07387b771f.woff",
+    "static/media/lg.ttf?22t19m": "/thuvienip7-gold/static/media/lg.a53dcc5ea47fe7d1d9fc.ttf",
+    "index.html": "/thuvienip7-gold/index.html",
+    "main.38065fbc.css.map": "/thuvienip7-gold/static/css/main.38065fbc.css.map",
+    "main.e8df9db3.js.map": "/thuvienip7-gold/static/js/main.e8df9db3.js.map"
   },
   "entrypoints": [
-    "static/css/main.753e9e2e.css",
-    "static/js/main.97b799d5.js"
+    "static/css/main.38065fbc.css",
+    "static/js/main.e8df9db3.js"
   ]
 }
