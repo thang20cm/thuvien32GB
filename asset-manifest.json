@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/thuvien32GB/static/css/main.5b551829.css",
+    "main.js": "/thuvien32GB/static/js/main.eea73ea3.js",
+    "static/media/lg.svg?22t19m": "/thuvien32GB/static/media/lg.adb7aeef16adb8599e2d.svg",
+    "static/media/lg.woff?22t19m": "/thuvien32GB/static/media/lg.0add59587d07387b771f.woff",
+    "static/media/lg.ttf?22t19m": "/thuvien32GB/static/media/lg.a53dcc5ea47fe7d1d9fc.ttf",
+    "index.html": "/thuvien32GB/index.html",
+    "main.5b551829.css.map": "/thuvien32GB/static/css/main.5b551829.css.map",
+    "main.eea73ea3.js.map": "/thuvien32GB/static/js/main.eea73ea3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b551829.css",
+    "static/js/main.eea73ea3.js"
+  ]
+}
